@@ -130,6 +130,7 @@ main {
   width: 79px;
 }
 .form-confirm {
+  display: none;
   text-align: center;
 }
 .form-confirm img {
