@@ -1,0 +1,66 @@
+.cards {
+  &-background {
+    img {
+      height: 900px;
+      width: 483px;
+    }
+  }
+  &-front {
+    top: 180px;
+    left: 150px;
+    &-logo {
+      img {
+        position: absolute;
+        top: 15px;
+        left: 15px;
+        width: 90px;
+      }
+    }
+    &-number {
+      position: absolute;
+      bottom: 60px;
+      left: 25px;
+      color: #fff;
+      font-size: 32px;
+    }
+    &-user {
+      position: absolute;
+      bottom: 25px;
+      left: 25px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: #fff;
+      width: 90%;
+      &-date {
+        display: flex;
+        justify-content: flex-end;
+      }
+    }
+  }
+  &-back {
+    top: 480px;
+    left: 250px;
+    &-cvc {
+      position: absolute;
+      color: #fff;
+      right: 55px;
+      top: 44.4%;
+      font-size: 0.9em;
+      letter-spacing: 3px;
+      width: 8%;
+    }
+  }
+  &-front-back {
+    height: 100%;
+    width: 100%;
+    display: block;
+    position: relative;
+  }
+  &-front,
+  &-back {
+    position: absolute;
+    max-width: 447px;
+    width: 100%;
+  }
+}

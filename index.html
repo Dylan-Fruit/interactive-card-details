@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | Interactive card details form</title>
+  </head>
+  <body>
+    <main>
+      <section class="cards">
+        <div class="cards-background">
+          <img src="images/bg-main-desktop.png" alt="cards background" />
+        </div>
+        <div class="cards-front">
+          <img
+            class="cards-front-back"
+            src="images/bg-card-front.png"
+            alt="front card img"
+          />
+          <span class="cards-front-logo">
+            <img src="images/card-logo.svg" alt="logo" />
+          </span>
+          <span class="cards-front-number">0000 0000 0000 0000</span>
+          <div class="cards-front-user">
+            <span class="cards-front-user-name">Jane Appleseed</span>
+            <span class="cards-front-user-date">00/00</span>
+          </div>
+        </div>
+        <div class="cards-back">
+          <img
+            class="cards-front-back"
+            src="images/bg-card-back.png"
+            alt="back card img"
+          />
+          <span class="cards-back-cvc">000</span>
+        </div>
+      </section>
+      <section class="form">
+        <form class="form-area">
+          <div class="form-name">
+            <label for="name"> Cardholder Name </label>
+            <input
+              type="text"
+              id="name"
+              class="name"
+              placeholder="e.g Jane Appleseed"
+            />
+          </div>
+          <div class="form-number">
+            <label for="card-number"> Card number </label>
+            <input
+              type="text"
+              id="card-number"
+              maxlength="19"
+              class="card-number"
+              placeholder="e.g 1234 5678 9123 0000"
+            />
+          </div>
+          <div class="form-date-cvc">
+            <div class="date">
+              <label for="date">exp. date (mm/yy)</label>
+              <input
+                type="text"
+                maxlength="2"
+                id="month"
+                class="month"
+                placeholder="MM"
+              />
+              <input
+                type="text"
+                maxlength="2"
+                id="year"
+                class="year"
+                placeholder="YY"
+              />
+            </div>
+            <div class="cvc-input">
+              <label for="cvc">cvc</label>
+              <input
+                type="text"
+                id="cvc"
+                maxlength="3"
+                class="cvc"
+                placeholder="e.g 123"
+              />
+            </div>
+          </div>
+          <button>Confirm</button>
+        </form>
+      </section>
+    </main>
+    <script src="./index.js"></script>
+  </body>
+</html>

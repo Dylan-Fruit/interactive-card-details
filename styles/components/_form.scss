@@ -1,0 +1,49 @@
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 400px;
+  &-area {
+    max-width: 400px;
+    div {
+      margin-bottom: 15px;
+    }
+  }
+  &-name,
+  &-number,
+  &-date-cvc {
+    display: flex;
+    flex-direction: column;
+    label {
+      text-transform: uppercase;
+    }
+    input {
+      margin-top: 5px;
+      padding: 10px 15px;
+      border-radius: 5px;
+      border: 1px solid #eee;
+      &:active,
+      &:focus {
+        outline-color: $gradient;
+      }
+    }
+  }
+  &-date-cvc {
+    display: flex;
+    flex-direction: row;
+    .date {
+      margin-right: 20px;
+      input {
+        width: 79px;
+      }
+    }
+  }
+  button {
+    width: 100%;
+    color: #fff;
+    background-color: $darkerViolet;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+  }
+}

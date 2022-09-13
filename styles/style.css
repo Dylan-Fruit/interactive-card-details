@@ -1,0 +1,127 @@
+.cards-background img {
+  height: 900px;
+  width: 483px;
+}
+.cards-front {
+  top: 180px;
+  left: 150px;
+}
+.cards-front-logo img {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  width: 90px;
+}
+.cards-front-number {
+  position: absolute;
+  bottom: 60px;
+  left: 25px;
+  color: #fff;
+  font-size: 32px;
+}
+.cards-front-user {
+  position: absolute;
+  bottom: 25px;
+  left: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  width: 90%;
+}
+.cards-front-user-date {
+  display: flex;
+  justify-content: flex-end;
+}
+.cards-back {
+  top: 480px;
+  left: 250px;
+}
+.cards-back-cvc {
+  position: absolute;
+  color: #fff;
+  right: 55px;
+  top: 44.4%;
+  font-size: 0.9em;
+  letter-spacing: 3px;
+  width: 8%;
+}
+.cards-front-back {
+  height: 100%;
+  width: 100%;
+  display: block;
+  position: relative;
+}
+.cards-front, .cards-back {
+  position: absolute;
+  max-width: 447px;
+  width: 100%;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  max-width: 1440px;
+  width: 100%;
+}
+
+body {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+main {
+  display: flex;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 400px;
+}
+.form-area {
+  max-width: 400px;
+}
+.form-area div {
+  margin-bottom: 15px;
+}
+.form-name, .form-number, .form-date-cvc {
+  display: flex;
+  flex-direction: column;
+}
+.form-name label, .form-number label, .form-date-cvc label {
+  text-transform: uppercase;
+}
+.form-name input, .form-number input, .form-date-cvc input {
+  margin-top: 5px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: 1px solid #eee;
+}
+.form-name input:active, .form-name input:focus, .form-number input:active, .form-number input:focus, .form-date-cvc input:active, .form-date-cvc input:focus {
+  outline-color: #6448fe to #600594;
+}
+.form-date-cvc {
+  display: flex;
+  flex-direction: row;
+}
+.form-date-cvc .date {
+  margin-right: 20px;
+}
+.form-date-cvc .date input {
+  width: 79px;
+}
+.form button {
+  width: 100%;
+  color: #fff;
+  background-color: #21092f;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+}
+
+/*# sourceMappingURL=style.css.map */
