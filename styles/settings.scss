@@ -18,3 +18,9 @@ $errorRed: hsl(0, 100%, 66%);
 $darkerViolet: hsl(278, 68%, 11%);
 $darkViolet: hsl(279, 6%, 55%);
 $lightViolet: hsl(270, 3%, 87%);
+
+@mixin inputProperties {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+}

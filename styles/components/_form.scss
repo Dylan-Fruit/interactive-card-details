@@ -16,6 +16,7 @@
     flex-direction: column;
     label {
       text-transform: uppercase;
+      color: $darkerViolet;
     }
     input {
       margin-top: 5px;
@@ -25,6 +26,14 @@
       &:active,
       &:focus {
         outline-color: $gradient;
+      }
+      &::placeholder {
+        @include inputProperties;
+        opacity: 0.3;
+      }
+      &[type="text"] {
+        @include inputProperties;
+        color: $darkerViolet;
       }
     }
   }
@@ -38,12 +47,33 @@
       }
     }
   }
-  button {
+  &-confirm {
+    text-align: center;
+    img {
+      width: 15%;
+      margin-bottom: 40px;
+    }
+    h1 {
+      font-size: 30px;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+      color: $darkerViolet;
+      letter-spacing: 3px;
+    }
+    p {
+      font-size: 20px;
+      margin-bottom: 50px;
+      color: $darkViolet;
+    }
+  }
+  .btn {
     width: 100%;
     color: #fff;
+    font-size: 18px;
     background-color: $darkerViolet;
     border: none;
     border-radius: 5px;
     padding: 10px 15px;
+    cursor: pointer;
   }
 }

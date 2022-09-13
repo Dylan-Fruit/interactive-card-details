@@ -30,6 +30,7 @@
   width: 90%;
 }
 .cards-front-user-date {
+  width: 5%;
   display: flex;
   justify-content: flex-end;
 }
@@ -41,7 +42,7 @@
   position: absolute;
   color: #fff;
   right: 55px;
-  top: 44.4%;
+  top: 45.5%;
   font-size: 0.9em;
   letter-spacing: 3px;
   width: 8%;
@@ -95,6 +96,7 @@ main {
 }
 .form-name label, .form-number label, .form-date-cvc label {
   text-transform: uppercase;
+  color: hsl(278deg, 68%, 11%);
 }
 .form-name input, .form-number input, .form-date-cvc input {
   margin-top: 5px;
@@ -103,7 +105,19 @@ main {
   border: 1px solid #eee;
 }
 .form-name input:active, .form-name input:focus, .form-number input:active, .form-number input:focus, .form-date-cvc input:active, .form-date-cvc input:focus {
-  outline-color: #6448fe to #600594;
+  outline-color: hsl(249deg, 99%, 64%) to hsl(278deg, 94%, 30%);
+}
+.form-name input::placeholder, .form-number input::placeholder, .form-date-cvc input::placeholder {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  opacity: 0.3;
+}
+.form-name input[type=text], .form-number input[type=text], .form-date-cvc input[type=text] {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  color: hsl(278deg, 68%, 11%);
 }
 .form-date-cvc {
   display: flex;
@@ -115,13 +129,34 @@ main {
 .form-date-cvc .date input {
   width: 79px;
 }
-.form button {
+.form-confirm {
+  text-align: center;
+}
+.form-confirm img {
+  width: 15%;
+  margin-bottom: 40px;
+}
+.form-confirm h1 {
+  font-size: 30px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  color: hsl(278deg, 68%, 11%);
+  letter-spacing: 3px;
+}
+.form-confirm p {
+  font-size: 20px;
+  margin-bottom: 50px;
+  color: hsl(279deg, 6%, 55%);
+}
+.form .btn {
   width: 100%;
   color: #fff;
-  background-color: #21092f;
+  font-size: 18px;
+  background-color: hsl(278deg, 68%, 11%);
   border: none;
   border-radius: 5px;
   padding: 10px 15px;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=style.css.map */
