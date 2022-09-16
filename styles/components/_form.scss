@@ -78,3 +78,24 @@
     cursor: pointer;
   }
 }
+
+@media screen and (max-width: 1100px) {
+  .form {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .form {
+    &-area {
+      margin: 0 20px;
+    }
+    &-date-cvc {
+      .date {
+        input {
+          width: 76px;
+        }
+      }
+    }
+  }
+}

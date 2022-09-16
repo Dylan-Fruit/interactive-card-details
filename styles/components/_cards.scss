@@ -4,6 +4,9 @@
       height: 900px;
       width: 483px;
     }
+    &-mobile {
+      display: none;
+    }
   }
   &-front {
     top: 180px;
@@ -63,5 +66,138 @@
     position: absolute;
     max-width: 447px;
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .cards {
+    &-background {
+      display: none;
+      &-mobile {
+        display: block;
+        margin-bottom: 100px;
+      }
+    }
+    &-front {
+      top: 284px;
+      left: 10%;
+      z-index: 1;
+      &-logo {
+        img {
+          width: 10%;
+        }
+      }
+      &-number {
+        bottom: 53px;
+        font-size: 17px;
+        letter-spacing: 2px;
+      }
+      &-user {
+        bottom: 17px;
+        width: 74%;
+        &-name {
+          font-size: 12px;
+          letter-spacing: 1px;
+        }
+        &-date {
+          width: 10%;
+          font-size: 12px;
+        }
+      }
+    }
+    &-back {
+      top: 24.2%;
+      left: 35%;
+      &-cvc {
+        right: 85px;
+        top: 45%;
+        font-size: 10px;
+      }
+    }
+    &-front-back {
+      width: 85%;
+    }
+    &-front,
+    &-back {
+      width: 60%;
+    }
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .cards {
+    &-background {
+      &-mobile {
+        img {
+          height: 295px;
+        }
+      }
+    }
+    &-front {
+      top: 200px;
+      &-number {
+        left: 15px;
+        font-size: 15px;
+      }
+      &-user {
+        left: 15px;
+      }
+    }
+    &-back {
+      top: 108px;
+      &-cvc {
+        right: 77px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .cards {
+    &-background {
+      &-mobile {
+        img {
+          height: 225px;
+        }
+      }
+    }
+    &-front-back {
+      width: 100%;
+    }
+    &-front,
+    &-back {
+      width: 69%;
+    }
+    &-front {
+      top: 135px;
+      left: 20px;
+      &-logo {
+        img {
+          width: 20%;
+        }
+      }
+      &-number {
+        bottom: 45px;
+        left: 15px;
+        font-size: 15px;
+      }
+      &-user {
+        left: 15px;
+        width: 85%;
+        &-name {
+          font-size: 10px;
+        }
+        &-date {
+          font-size: 10px;
+        }
+      }
+    }
+    &-back {
+      top: 55px;
+      left: 100px;
+      &-cvc {
+        right: 37px;
+      }
+    }
   }
 }

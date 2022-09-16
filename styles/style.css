@@ -2,6 +2,9 @@
   height: 900px;
   width: 483px;
 }
+.cards-background-mobile {
+  display: none;
+}
 .cards-front {
   top: 180px;
   left: 150px;
@@ -59,6 +62,116 @@
   width: 100%;
 }
 
+@media screen and (max-width: 1100px) {
+  .cards-background {
+    display: none;
+  }
+  .cards-background-mobile {
+    display: block;
+    margin-bottom: 100px;
+  }
+  .cards-front {
+    top: 284px;
+    left: 10%;
+    z-index: 1;
+  }
+  .cards-front-logo img {
+    width: 10%;
+  }
+  .cards-front-number {
+    bottom: 53px;
+    font-size: 17px;
+    letter-spacing: 2px;
+  }
+  .cards-front-user {
+    bottom: 17px;
+    width: 74%;
+  }
+  .cards-front-user-name {
+    font-size: 12px;
+    letter-spacing: 1px;
+  }
+  .cards-front-user-date {
+    width: 10%;
+    font-size: 12px;
+  }
+  .cards-back {
+    top: 24.2%;
+    left: 35%;
+  }
+  .cards-back-cvc {
+    right: 85px;
+    top: 45%;
+    font-size: 10px;
+  }
+  .cards-front-back {
+    width: 85%;
+  }
+  .cards-front, .cards-back {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 580px) {
+  .cards-background-mobile img {
+    height: 295px;
+  }
+  .cards-front {
+    top: 200px;
+  }
+  .cards-front-number {
+    left: 15px;
+    font-size: 15px;
+  }
+  .cards-front-user {
+    left: 15px;
+  }
+  .cards-back {
+    top: 108px;
+  }
+  .cards-back-cvc {
+    right: 77px;
+  }
+}
+@media screen and (max-width: 430px) {
+  .cards-background-mobile img {
+    height: 225px;
+  }
+  .cards-front-back {
+    width: 100%;
+  }
+  .cards-front, .cards-back {
+    width: 69%;
+  }
+  .cards-front {
+    top: 135px;
+    left: 20px;
+  }
+  .cards-front-logo img {
+    width: 20%;
+  }
+  .cards-front-number {
+    bottom: 45px;
+    left: 15px;
+    font-size: 15px;
+  }
+  .cards-front-user {
+    left: 15px;
+    width: 85%;
+  }
+  .cards-front-user-name {
+    font-size: 10px;
+  }
+  .cards-front-user-date {
+    font-size: 10px;
+  }
+  .cards-back {
+    top: 55px;
+    left: 100px;
+  }
+  .cards-back-cvc {
+    right: 37px;
+  }
+}
 * {
   box-sizing: border-box;
   margin: 0;
@@ -78,6 +191,12 @@ main {
   display: flex;
 }
 
+@media screen and (max-width: 1100px) {
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .form {
   display: flex;
   justify-content: center;
@@ -158,6 +277,20 @@ main {
   border-radius: 5px;
   padding: 10px 15px;
   cursor: pointer;
+}
+
+@media screen and (max-width: 1100px) {
+  .form {
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 430px) {
+  .form-area {
+    margin: 0 20px;
+  }
+  .form-date-cvc .date input {
+    width: 76px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
